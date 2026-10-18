@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: gnss-sentinel
+Version: 1.0.0
+Summary: GNSS interference research, signal analysis, and experiment platform
+Requires-Python: >=3.11
+Requires-Dist: fastapi<1,>=0.115
+Requires-Dist: uvicorn<1,>=0.34
+Requires-Dist: python-multipart<1,>=0.0.20
+Requires-Dist: numpy<3,>=2.1
+Requires-Dist: scipy<2,>=1.14
+Requires-Dist: pandas<4,>=2.2
+Requires-Dist: scikit-learn<2,>=1.6
+Requires-Dist: joblib<2,>=1.4
+Requires-Dist: pillow<13,>=11
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8; extra == "dev"
+Requires-Dist: httpx<1,>=0.28; extra == "dev"
+Provides-Extra: vision
+Requires-Dist: torch<3,>=2.6; extra == "vision"
+Requires-Dist: torchvision<1,>=0.21; extra == "vision"
+Provides-Extra: excel
+Requires-Dist: openpyxl<4,>=3.1; extra == "excel"

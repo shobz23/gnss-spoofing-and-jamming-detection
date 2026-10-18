@@ -1,0 +1,2 @@
+[console_scripts]
+gnss-sentinel = gnss_sentinel.cli:main

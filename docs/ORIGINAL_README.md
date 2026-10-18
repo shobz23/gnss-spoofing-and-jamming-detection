@@ -1,0 +1,18 @@
+# GNSS/GPS Spoofing and Jamming Detection and Classification Using Machine Learning, Deep Learning, and Computer Vision
+
+
+I have provided a Google Colaboratory link for each Jupyter Notebook (.ipynb) file. Feel free to open the code files and run them effortlessly.
+
+All the code for this project has been developed in Python, utilizing Google Colaboratory for execution.
+The original dataset, known as the Raw IQ dataset for GNSS GPS jamming signal classification, can be accessed [here]( https://zenodo.org/records/4629685).
+
+By leveraging advanced image classification techniques, optimized preprocessing steps, and improved dataset partitioning, I have achieved a remarkable increase in accuracy—exceeding the results presented in the literature by over 5%(~ 99% accuracy).
+The initial draft of our research paper can be found  here titled [GNSS/GPS Spoofing and Jamming Identification Using Machine Learning and Deep Learning](https://arxiv.org/abs/2501.02352).
+
+I am currently focused on enhancing the machine learning components of this project. Please stay tuned for future commits and updates.
+
+If you require any additional information, please don't hesitate to reach out to me via [email](alighdlcv2025@gmail.com).
+
+The GPS Spoofing code have been added to the repo. In the next modification, I am going to utilize unsupervised learning techniques in order to enhance the robustness of the supervised learning methods.
+
+## This repository will undergo extensive updates. So, Star the repo and Stay tuned!

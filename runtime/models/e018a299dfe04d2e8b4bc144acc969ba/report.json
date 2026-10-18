@@ -1,0 +1,148 @@
+{
+  "name": "Spoofing \u00b7 Extra trees",
+  "task": "spoofing",
+  "algorithm": "Extra trees",
+  "dataset_id": "674f05ff7ce649a5b9a60d3290394cb7",
+  "dataset_name": "Synthetic spoofing examples",
+  "dataset_sha256": "7c0f3c25e3b5bb35367c4a3ed47d14941c356928e60e9390e3f7e148e72111f7",
+  "provenance": "synthetic",
+  "source": "Sentinel deterministic fixture v1",
+  "classes": [
+    "authentic",
+    "intermediate",
+    "simplistic",
+    "sophisticated"
+  ],
+  "features": [
+    "PRN",
+    "DO",
+    "PD",
+    "RX",
+    "TOW",
+    "CP",
+    "EC",
+    "LC",
+    "PC",
+    "PIP",
+    "PQP",
+    "TCD",
+    "CN0"
+  ],
+  "seed": 42,
+  "split_strategy": "grouped 70/15/15 (approximate by groups)",
+  "split_sizes": {
+    "train": 840,
+    "validation": 160,
+    "test": 200
+  },
+  "metrics": {
+    "accuracy": 0.98,
+    "balanced_accuracy": 0.98,
+    "macro_f1": 0.9798265324105226,
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        50,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        46
+      ]
+    ],
+    "classification_report": {
+      "authentic": {
+        "precision": 0.9433962264150944,
+        "recall": 1.0,
+        "f1-score": 0.970873786407767,
+        "support": 50.0
+      },
+      "intermediate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 50.0
+      },
+      "simplistic": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1-score": 0.9900990099009901,
+        "support": 50.0
+      },
+      "sophisticated": {
+        "precision": 1.0,
+        "recall": 0.92,
+        "f1-score": 0.9583333333333334,
+        "support": 50.0
+      },
+      "accuracy": 0.98,
+      "macro avg": {
+        "precision": 0.9809470958194598,
+        "recall": 0.98,
+        "f1-score": 0.9798265324105226,
+        "support": 200.0
+      },
+      "weighted avg": {
+        "precision": 0.9809470958194598,
+        "recall": 0.98,
+        "f1-score": 0.9798265324105228,
+        "support": 200.0
+      }
+    }
+  },
+  "leaderboard": [
+    {
+      "algorithm": "Random forest",
+      "validation_macro_f1": 0.9622507122507122,
+      "validation_accuracy": 0.9625
+    },
+    {
+      "algorithm": "Extra trees",
+      "validation_macro_f1": 0.9684846920619278,
+      "validation_accuracy": 0.96875
+    },
+    {
+      "algorithm": "Logistic regression",
+      "validation_macro_f1": 0.9684846920619278,
+      "validation_accuracy": 0.96875
+    }
+  ],
+  "anomaly_available": true,
+  "feature_importance": {
+    "PRN": 0.010118668634364024,
+    "DO": 0.0086587128500013,
+    "PD": 0.008724803805257716,
+    "RX": 0.009958480034577472,
+    "TOW": 0.009627003085047282,
+    "CP": 0.01080324969013257,
+    "EC": 0.22366614866908774,
+    "LC": 0.09127377026374175,
+    "PC": 0.008645442016966914,
+    "PIP": 0.10946159739792385,
+    "PQP": 0.24022779735661517,
+    "TCD": 0.16020776196757924,
+    "CN0": 0.10862656422770493
+  },
+  "duration_seconds": 1.24,
+  "sklearn_version": "1.9.1",
+  "notes": [
+    "Model selected by validation macro F1; test set evaluated only after selection.",
+    "Prediction probabilities are uncalibrated model scores.",
+    "Synthetic scores demonstrate the software, not field performance."
+  ]
+}

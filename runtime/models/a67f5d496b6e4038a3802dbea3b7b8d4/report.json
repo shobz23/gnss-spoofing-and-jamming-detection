@@ -1,0 +1,184 @@
+{
+  "name": "Jamming \u00b7 Random forest",
+  "task": "jamming",
+  "algorithm": "Random forest",
+  "dataset_id": "8fc0549e4de84845a51c684686993e0b",
+  "dataset_name": "Synthetic jamming examples",
+  "dataset_sha256": "aa074ad0f4a84aa6f496474822e041ba990a49e5132c9041d6bd684a76aef2d1",
+  "provenance": "synthetic",
+  "source": "Sentinel deterministic fixture v1",
+  "classes": [
+    "am",
+    "chirp",
+    "clean",
+    "fm",
+    "narrowband",
+    "pulsed"
+  ],
+  "features": [
+    "power_db",
+    "crest_factor",
+    "spectral_entropy",
+    "spectral_flatness",
+    "peak_fraction",
+    "occupied_bandwidth",
+    "envelope_cv",
+    "phase_step_std",
+    "duty_cycle",
+    "spectral_centroid",
+    "spectral_spread",
+    "envelope_kurtosis"
+  ],
+  "seed": 42,
+  "split_strategy": "grouped 70/15/15 (approximate by groups)",
+  "split_sizes": {
+    "train": 420,
+    "validation": 60,
+    "test": 120
+  },
+  "metrics": {
+    "accuracy": 0.9916666666666667,
+    "balanced_accuracy": 0.9916666666666667,
+    "macro_f1": 0.9916614550760893,
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        19,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        20
+      ]
+    ],
+    "classification_report": {
+      "am": {
+        "precision": 0.9523809523809523,
+        "recall": 1.0,
+        "f1-score": 0.975609756097561,
+        "support": 20.0
+      },
+      "chirp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "clean": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "fm": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1-score": 0.9743589743589743,
+        "support": 20.0
+      },
+      "narrowband": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "pulsed": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "accuracy": 0.9916666666666667,
+      "macro avg": {
+        "precision": 0.9920634920634921,
+        "recall": 0.9916666666666667,
+        "f1-score": 0.9916614550760893,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.9920634920634921,
+        "recall": 0.9916666666666667,
+        "f1-score": 0.9916614550760893,
+        "support": 120.0
+      }
+    }
+  },
+  "leaderboard": [
+    {
+      "algorithm": "Random forest",
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "algorithm": "Extra trees",
+      "validation_macro_f1": 0.9832915622389308,
+      "validation_accuracy": 0.9833333333333333
+    },
+    {
+      "algorithm": "Logistic regression",
+      "validation_macro_f1": 0.9663299663299663,
+      "validation_accuracy": 0.9666666666666667
+    }
+  ],
+  "anomaly_available": true,
+  "feature_importance": {
+    "power_db": 0.0774146748274472,
+    "crest_factor": 0.023941366739162577,
+    "spectral_entropy": 0.12079114794569665,
+    "spectral_flatness": 0.03588440160984501,
+    "peak_fraction": 0.26535213869609564,
+    "occupied_bandwidth": 0.027362878769871632,
+    "envelope_cv": 0.1937498479686502,
+    "phase_step_std": 0.10195709075759442,
+    "duty_cycle": 0.020241411623520906,
+    "spectral_centroid": 0.024407921598284903,
+    "spectral_spread": 0.05246155939822596,
+    "envelope_kurtosis": 0.05643556006460489
+  },
+  "duration_seconds": 1.66,
+  "sklearn_version": "1.9.1",
+  "notes": [
+    "Model selected by validation macro F1; test set evaluated only after selection.",
+    "Prediction probabilities are uncalibrated model scores.",
+    "Synthetic scores demonstrate the software, not field performance."
+  ]
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101c2c"><title>GNSS Sentinel · Interference intelligence</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2314b8a6'/%3E%3Cpath d='M8 23h6l4-12 6 20 4-8h5' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E"><link rel="stylesheet" href="/static/styles.css"><script src="/static/app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#overview"><span class="brandmark">⌁</span><span>SENTINEL<small>GNSS INTELLIGENCE</small></span></a>
+  <div class="workspace"><span class="workspace-icon">S</span><span>Research workspace<small>Local deployment</small></span><span class="green-dot"></span></div>
+  <p class="nav-label">WORKSPACE</p>
+  <nav aria-label="Main navigation">
+    <button data-page="overview" class="active"><span>◫</span> Overview</button>
+    <button data-page="signals"><span>⌁</span> Signal Lab</button>
+    <button data-page="spoofing"><span>◎</span> Spoofing analysis</button>
+    <button data-page="datasets"><span>▤</span> Data library</button>
+    <button data-page="models"><span>⎔</span> Experiments</button>
+    <button data-page="drift"><span>⇄</span> Drift monitor</button>
+    <button data-page="incidents"><span>⚑</span> Incidents <b id="incident-count">0</b></button>
+  </nav>
+  <p class="nav-label resources-label">RESOURCES</p>
+  <nav><button data-page="sources"><span>↗</span> Research & sources</button><a href="/docs" target="_blank" rel="noopener"><span>⌘</span> API reference ↗</a></nav>
+  <div class="sidebar-bottom"><div class="connection"><i class="green-dot"></i><span id="connection-text">Connecting…</span></div><button id="settings-button" class="profile"><span class="avatar">RE</span><span>Research engineer<small>Workspace access settings</small></span><span>⚙</span></button></div>
+</aside>
+<div class="shell">
+  <header class="topbar"><div><span class="breadcrumb">Workspace</span><span class="slash">/</span><span id="crumb">Overview</span></div><div class="top-actions"><span class="local-badge">LOCAL INSTANCE</span><span class="top-date" id="today"></span><button id="refresh" class="icon-button" aria-label="Refresh workspace">↻</button></div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer><span>GNSS Sentinel <b>v1.0</b></span><span>Research-grade workflows · Traceable predictions</span></footer>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="detail-dialog"><div class="dialog-heading"><h2 id="dialog-title">Details</h2><button class="icon-button" id="close-dialog" aria-label="Close dialog">×</button></div><div id="dialog-content"></div></dialog>
+<dialog id="settings-dialog"><div class="dialog-heading"><h2>Workspace access</h2><button class="icon-button" id="close-settings" aria-label="Close settings">×</button></div><p>If this instance requires an API key, enter it here. It is retained only in this browser session.</p><form id="key-form"><label>API key<input id="api-key" type="password" autocomplete="off" placeholder="Optional on local deployments"></label><button class="primary" type="submit">Connect workspace</button></form></dialog>
+</body></html>
