@@ -84,7 +84,7 @@ Default split proportions are approximately 70/15/15. Group sizes can change exa
 
 Predictions abstain with `uncertain` when the highest model score is below 0.55 or a feature is over 8 training standard deviations from its training median. These defaults are research heuristics, not calibrated operating thresholds. Numeric class `0` is assumed normal **only for the anomaly/incident policy**; verify or remap labels before using another dataset.
 
-## Use recorded datasets
+## Datasets
 
 See [data contracts and imports](docs/DATA_GUIDE.md). Register a CSV and train:
 
