@@ -1,0 +1,12 @@
+services:
+  sentinel:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      SENTINEL_API_KEY: ${SENTINEL_API_KEY:?Set SENTINEL_API_KEY before starting Docker Compose}
+    volumes:
+      - sentinel-data:/data
+    restart: unless-stopped
+volumes:
+  sentinel-data:

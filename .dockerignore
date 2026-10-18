@@ -1,0 +1,8 @@
+.git
+.venv
+runtime
+work
+tests
+*.ipynb
+__pycache__
+.env
